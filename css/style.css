@@ -1,0 +1,65 @@
+
+/* -------------------------new add style  */
+.header{
+  height: 100px;
+  background-color: #999;
+}
+.left_main{
+  background-color: #666;
+  /* width: 100vh; */
+  height: 100vh;
+}
+.right_main{
+  background-color: #c7bdbd;
+  /* width: 100vh; */
+  height: 100vh;
+}
+.logo{
+  background-color: pink;
+}
+.title{
+  background-color: pink;
+}
+.user{
+  background-color: pink;
+}
+.navbar{
+  display: none;
+}
+.collapse{
+  display: none;
+}
+
+@media screen and (max-width:540px) {
+.user{
+  display: none;
+}
+.navbar{
+  display: block;
+}
+.collapse{
+  display: block;
+}
+.display_main{
+  display: none;
+}
+}
+
+button.btn.btn-primary {
+  display: none;
+}
+@media screen and (min-width:575px){
+  button.btn.btn-primary {
+    display: block;
+  }
+  .display_main{
+    display: none;
+  }
+  
+}
+@media  screen and (min-width:768px) {
+  button.btn.btn-primary {
+    display: none;
+  }
+  
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>淨零學院</title>
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link href="./css/fontawesome/css/all.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+
+
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!-- 頭部區域 -->
+    <div class="header">
+      <span class="logo">logo</span>
+      <span class="title">title</span>
+      <span class="user">user</span>
+
+      <!-- narbar  -->
+      <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+        <div class="bg-dark p-4">
+          <h5 class="text-body-emphasis h4">選單</h5>
+          <span class="text-body-secondary">
+            <ul>
+              <li><a href="#">系統功能維護</a></li>
+              <li><a href="#">群組功能維護</a></li>
+              <li><a href="#">人員帳號維護</a></li>
+              <li><a href="#">線上報名</a></li>
+              <li><a href="#">公告</a></li>
+            </ul>
+          </span>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+    <!-- bootstrap grid -->
+    <div class="row">
+      <!-- 左側欄位 -->
+      <div class="col-md-3 col-sm-5 col-xs-12 display_main">leftmain
+        <div class="side">
+          <ul>
+            <li><a href="#">系統功能維護</a></li>
+            <li><a href="#">群組功能維護</a></li>
+            <li><a href="#">人員帳號維護</a></li>
+            <li><a href="#">線上報名</a></li>
+            <li><a href="#">公告</a></li>
+          </ul>
+        </div>
+
+
+
+
+      </div>
+
+      <!-- 右側欄位主體 -->
+      <div class=" right_main col-md-9 col-sm-7 col-xs-12 ">
+        rightmain
+        <!-- 在pad顯示offcanva -->
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+          按鈕</button>
+
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+          aria-labelledby="offcanvasWithBothOptionsLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul>
+              <li><a href="#">系統功能維護</a></li>
+              <li><a href="#">群組功能維護</a></li>
+              <li><a href="#">人員帳號維護</a></li>
+              <li><a href="#">線上報名</a></li>
+              <li><a href="#">公告</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="./js/library/jquery-3.7.0.min.js"></script>
+    <script src="./js/addStyle.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+    <script>
+      const btn = document.querySelector('.btn')
+      const side = document.querySelector('.display_main')
+      // side.style.background='red'
+      btn.addEventListener('click', function (e) {
+        // side.style.display = 'none';
+        // console.log('123');
+      })
+    </script>
+</body>
+
+</html>
